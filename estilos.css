@@ -1,0 +1,151 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111b21;
+  color: white;
+}
+
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #202c33;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-box button {
+  background-color: #00a884;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #202c33;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #2a3942;
+}
+
+.sidebar input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.sidebar li {
+  padding: 10px;
+  background-color: #111b21;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #2a3942;
+}
+
+.sidebar .options {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar button {
+  background-color: #00a884;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #0b141a;
+}
+
+.chat-header {
+  padding: 15px;
+  background-color: #202c33;
+  font-weight: bold;
+  border-bottom: 1px solid #2a3942;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  background-color: #202c33;
+  border-top: 1px solid #2a3942;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.input-area button {
+  background-color: #00a884;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.user-msg {
+  align-self: flex-end;
+  background-color: #005c4b;
+}
+
+.other-msg {
+  align-self: flex-start;
+  background-color: #2a3942;
+}

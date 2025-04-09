@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="login-box" id="loginBox">
+  <h2>Iniciar Sesión</h2>
+  <input type="text" id="username" placeholder="Tu nombre">
+  <button onclick="iniciarSesion()">Entrar</button>
+</div>
+
+<div class="chat-app" id="chatApp" style="display: none;">
+  <div class="sidebar">
+    <h3>Contactos</h3>
+    <input type="text" id="buscador" oninput="buscarContacto()" placeholder="Buscar contacto">
+    <ul id="listaContactos"></ul>
+    <div class="options">
+      <button onclick="agregarContacto()">Agregar</button>
+      <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+  </div>
+  <div class="main-chat">
+    <div class="chat-header" id="nombreContacto">Selecciona un contacto</div>
+    <div class="chat-box" id="chatBox"></div>
+    <div class="input-area">
+      <input type="text" id="mensajeInput" placeholder="Escribe un mensaje">
+      <button onclick="enviarMensaje()">Enviar</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
